@@ -7,24 +7,36 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #CCCCCC">
+    <a-scene background="color: #0A0704">
       <a-assets>
-        <a-asset-item id="Cadeira" src="assets/GamerSandalye.glb"></a-asset-item>
-        <a-asset-item id="Monitor" src="assets/Monitor.glb"></a-asset-item>
-        <a-asset-item id="Headphone" src="assets/Headphone.glb"></a-asset-item>
-        <a-asset-item id="Setup" src="assets/SETUP.glb"></a-asset-item>
+        <a-asset-item id="Cadeira" src="assets/models/GamerSandalye.glb"></a-asset-item>
+        <a-asset-item id="Monitor" src="assets/models/Monitor.glb"></a-asset-item>
+        <a-asset-item id="Headphone" src="assets/models/Headphone.glb"></a-asset-item>
+        <a-asset-item id="Setup" src="assets/models/SETUP.glb"></a-asset-item>
+        <a-asset-item id="Bancada" src="assets/models/bancada.glb"></a-asset-item>
       </a-assets>
 
+      //paredes
+      <a-box height="50" width="140" position="-0.5 25 -57.5"></a-box>
+      <a-box height="50" width="120" rotation="0 90 0" position="69.901 25.000 2.075"></a-box>
+      <a-box height="50" width="140" position="-0.5 25 61.478"></a-box>
+      <a-box height="120" width="140" rotation="90 0 0" position="-0.5 50.384 1.946"></a-box>
+
       //backstage
-      <a-box width="100" height="0.1" depth="80" color="#000080"></a-box>
+      <a-box width="200" height="0.1" depth="160" color="grey" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
       <a-box width="0.1" height="15" depth="20" rotation="90 90 0"position="37.5 10 30" material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
       <a-box width="0.1" height="15" depth="20" rotation="90 90 0"position="37.5 10 -30" material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
       <a-box width="0.1" height="20" depth="60"  position="30 10 0"  material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
       
+      //expositores
+      <a-box width="4" height="5" depth="10" position="37 2 16" material="src: url(assets/textures/wood_texture.jpg)"></a-box>
+      <a-box width="4" height="5" depth="10" position="37 2 0" material="src: url(assets/textures/wood_texture.jpg)"></a-box>
+      <a-box width="4" height="5" depth="10" position="37 2 -16" material="src: url(assets/textures/wood_texture.jpg)"></a-box>
+
       //palco
-      <a-box width="15" height="2" depth="55" color="black" position="22.4 1 0"></a-box>
-      <a-box color="black" width="10" height="1.5" depth="3" position="23 0.5 28"></a-box>
-      <a-box color="black" width="10" height="1.5" depth="3" position="23 0.5 -28"></a-box>
+      <a-box width="15" height="2" depth="55" color="grey" position="22.4 1 0" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
+      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 28" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
+      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 -28" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
       <a-entity gltf-model="#Cadeira" position="20 4.5 16" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="#Cadeira" position="20 4.5 8" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="#Cadeira" position="20 4.5 0" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
@@ -32,39 +44,39 @@
       <a-entity gltf-model="#Cadeira" position="20 4.5 -16" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
 
       <a-entity>//mesa 1
-        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 16"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 12.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 19.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 19.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 12.5"></a-box>
+        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 16" material="src: url(assets/textures/MetalSteelBrushed001_ROUGHNESS_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 12.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 19.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 19.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 12.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)" ></a-box>
       </a-entity>
       <a-entity>//mesa 2
-        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 7.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 4"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 11"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 11"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 4"></a-box>
+        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 7.5" material="src: url(assets/textures/MetalSteelBrushed001_ROUGHNESS_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 4" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 11" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 11" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 4" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
       </a-entity>
       <a-entity>//mesa 3
-        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -1"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -4.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 2.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 2.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -4.5"></a-box>
+        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -1" material="src: url(assets/textures/MetalSteelBrushed001_ROUGHNESS_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -4.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 2.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 2.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -4.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
       </a-entity>
       <a-entity>//mesa 4
-        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -9.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -13"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -6"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 -6"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -13"></a-box>
+        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -9.5" material="src: url(assets/textures/MetalSteelBrushed001_ROUGHNESS_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -13" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -6" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 -6" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -13" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
       </a-entity>
       <a-entity>//mesa 5
-        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -18"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -21.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -14.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 -14.5"></a-box>
-        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -21.5"></a-box>
+        <a-box width="4" height="0.1" depth="8" color="grey" position="17.5 5.2 -18" material="src: url(assets/textures/MetalSteelBrushed001_ROUGHNESS_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -21.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="16.7 3 -14.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.5 3 -14.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
+        <a-box height="4.4" width="0.3" depth="0.3" position="18.7 3 -21.5" material="src: url(assets/textures/MetalSteelBrushed001_COL_2K_METALNESS.png)"></a-box>
       </a-entity>
 
       //monitores
@@ -87,6 +99,11 @@
       <a-entity gltf-model="#Setup" position="18 5.2 -1" scale="0.6 0.6 0.6"></a-entity>
       <a-entity gltf-model="#Setup" position="18 5.2 -9.5" scale="0.6 0.6 0.6"></a-entity>
       <a-entity gltf-model="#Setup" position="18 5.2 -18" scale="0.6 0.6 0.6"></a-entity>
+
+      //Bancada
+      <a-entity gltf-model="#Bancada" position="-36.4 3.4 0" scale="0.03 0.03 0.03" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#Bancada" position="-13.4 3.4 42.4" scale="0.03 0.03 0.03" rotation="0 180 0"></a-entity>
+      <a-entity gltf-model="#Bancada" position="-13.4 3.4 -42.4" scale="0.03 0.03 0.03" rotation="0 0 0"></a-entity>
 
       <a-camera position="0 8 0"></a-camera>
     </a-scene>

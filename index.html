@@ -14,16 +14,20 @@
         <a-asset-item id="Headphone" src="assets/models/Headphone.glb"></a-asset-item>
         <a-asset-item id="Setup" src="assets/models/SETUP.glb"></a-asset-item>
         <a-asset-item id="Bancada" src="assets/models/bancada.glb"></a-asset-item>
+        <a-asset-item id="Trofeu" src="assets/models/trophy.glb"></a-asset-item>
+        <a-asset-item id="Trofeu_2" src="assets/models/trophy_2.glb"></a-asset-item>
+
       </a-assets>
 
       //paredes
-      <a-box height="50" width="140" position="-0.5 25 -57.5"></a-box>
-      <a-box height="50" width="120" rotation="0 90 0" position="69.901 25.000 2.075"></a-box>
-      <a-box height="50" width="140" position="-0.5 25 61.478"></a-box>
-      <a-box height="120" width="140" rotation="90 0 0" position="-0.5 50.384 1.946"></a-box>
+      <a-box height="50" width="140" color="grey" position="-0.5 25 -57.5" material="src: url(assets/textures/Stone-4956.jpg)"></a-box>
+      <a-box height="50" width="120" rotation="0 90 0" color="grey" position="69.901 25.000 2.075" material="src: url(assets/textures/Stone-4956.jpg)"></a-box>
+      <a-box height="50" width="120" rotation="0 90 0" color="grey" position="-70.013 25.000 2.075" material="src: url(assets/textures/Stone-4956.jpg)"></a-box>
+      <a-box height="50" width="140" color="grey" position="-0.5 25 61.478" material="src: url(assets/textures/Stone-4956.jpg)"></a-box>
+      <a-box height="120" width="140" color="grey" rotation="90 0 0" position="-0.5 50.384 1.946" material="src: url(assets/textures/Stone-4956.jpg)"></a-box>
 
       //backstage
-      <a-box width="200" height="0.1" depth="160" color="grey" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
+      <a-box width="200" height="0.1" depth="160" color="grey" material="src: url(assets/textures/concrete_9065.jpg)"></a-box>
       <a-box width="0.1" height="15" depth="20" rotation="90 90 0"position="37.5 10 30" material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
       <a-box width="0.1" height="15" depth="20" rotation="90 90 0"position="37.5 10 -30" material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
       <a-box width="0.1" height="20" depth="60"  position="30 10 0"  material="src: url(assets/navi-counter-strike-logo-wallpaper-preview.jpg)"></a-box>
@@ -34,9 +38,9 @@
       <a-box width="4" height="5" depth="10" position="37 2 -16" material="src: url(assets/textures/wood_texture.jpg)"></a-box>
 
       //palco
-      <a-box width="15" height="2" depth="55" color="grey" position="22.4 1 0" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
-      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 28" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
-      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 -28" material="src: url(assets/textures/carpet_texture.jpg)"></a-box>
+      <a-box width="15" height="2" depth="55" color="grey" position="22.4 1 0" material="src: url(assets/textures/concrete_9065.jpg)"></a-box>
+      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 28" material="src: url(assets/textures/concrete_9065.jpg)"></a-box>
+      <a-box color="grey" width="10" height="1.5" depth="3" position="23 0.5 -28" material="src: url(assets/textures/cconcrete_9065.jpg)"></a-box>
       <a-entity gltf-model="#Cadeira" position="20 4.5 16" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="#Cadeira" position="20 4.5 8" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="#Cadeira" position="20 4.5 0" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
@@ -101,9 +105,14 @@
       <a-entity gltf-model="#Setup" position="18 5.2 -18" scale="0.6 0.6 0.6"></a-entity>
 
       //Bancada
-      <a-entity gltf-model="#Bancada" position="-36.4 3.4 0" scale="0.03 0.03 0.03" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#Bancada"  position="-36.4 3.4 0" scale="0.03 0.03 0.03" rotation="0 90 0"></a-entity>
       <a-entity gltf-model="#Bancada" position="-13.4 3.4 42.4" scale="0.03 0.03 0.03" rotation="0 180 0"></a-entity>
       <a-entity gltf-model="#Bancada" position="-13.4 3.4 -42.4" scale="0.03 0.03 0.03" rotation="0 0 0"></a-entity>
+
+      //Trophy
+      <a-entity gltf-model="#Trofeu" position="37.574 4.691 -0.750" scale="6 6 6"></a-entity>
+      <a-entity gltf-model="#Trofeu" position="37.574 4.691 14.509" scale="6 6 6"></a-entity>
+      <a-entity gltf-model="#Trofeu" position="37.574 4.691 -17.474" scale="6 6 6"></a-entity>
 
       <a-camera position="0 8 0"></a-camera>
     </a-scene>
